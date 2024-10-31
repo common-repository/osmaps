@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" id="olmincss-css" href="../ol.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="popupmincss-css" href="../popup.min.css" type="text/css" media="all">
+        <style id="popupmincss-inline-css" type="text/css">
+            .osmapsMap{height: 70vh; }
+        </style>        
+    </head>
+    <body>
+        <button class="button" onclick="window.open('','_self').close();" > CLOSE Window </button>
+        <br>
+        
+        <script type="text/javascript" src="../ol.min.js"></script>
+
+        <div id="os_map" class="osmapsMap"></div>
+        <div id="popup" class="ol-popup">
+            <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+            <div class="ol-popup-direc">
+                <a id="popup_href_directions" target="_blank"><img alt="Directions Icon" src="../Directions_image1.png" title="Directions"></a>
+            </div>
+            <div id="popup_content" class="ol-popup-content">TextArea Content<br>Mappa di Gastone</div>
+        </div>
+
+<script>
+let longitude = 19, latitude = 45, zoom = 7;    
+var markerLon = longitude,     
+    markerLat = latitude, 
+    myZoom = zoom; 
+
+var centerLon = markerLon, centerLat = markerLat;
+
+var container = document.getElementById('popup');
+
+var closer = document.getElementById('popup-closer');
+
+var Lat2Direc, Lon2Direc;
+
+( Number.isInteger( markerLat ) ) ? Lat2Direc = markerLat.toString() + '.00' : Lat2Direc = markerLat.toString();
+
+( Number.isInteger( markerLon ) ) ? Lon2Direc = markerLon.toString() + '.00' : Lon2Direc = markerLon.toString(); 
+
+popup_href_directions.href = 'https://www.openstreetmap.org/directions?from=' + Lat2Direc + ',' + Lon2Direc;
+
+var overlay = new ol.Overlay({
+    element: container, 
+    autoPan: true, 
+    position: ol.proj.fromLonLat( [markerLon, markerLat] ),
+    offset: [-80,-30],
+    autoPanAnimation: { duration: 250 }
+});
+
+closer.onclick = function () {
+    overlay.setPosition( undefined ); 
+    closer.blur(); 
+    return false;
+};
+
+var map = new ol.Map({
+    interactions: ol.interaction.defaults( {mouseWheelZoom:false} ),     /*  disable wheel   */
+    layers: [new ol.layer.Tile({ source: new ol.source.OSM()})],
+    overlays: [overlay], 
+    target: 'os_map', 
+    view: new ol.View({
+        center: ol.proj.fromLonLat( [centerLon, centerLat] ), 
+        zoom: myZoom
+    })
+});
+
+map.on( 'singleclick', function() {
+    overlay.setPosition( ol.proj.fromLonLat( [markerLon, markerLat] ));
+});
+
+/* popup_content.innerHTML = mapopup; */      /*  mapopup is from db_options[]   */
+
+</script>
+    </body>
+</html>

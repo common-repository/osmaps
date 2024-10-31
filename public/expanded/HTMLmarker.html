@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML marker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" id="olmincss-css" href="../ol.min.css" type="text/css" media="all">
+        <link rel="stylesheet" id="popupmincss-css" href="../popup.min.css" type="text/css" media="all">
+        <style id="popupmincss-inline-css" type="text/css">
+            .osmapsMap{height: 350px; }
+        </style>        
+     
+    </head>
+    <body>
+    <script type="text/javascript" src="../ol.min.js"></script>
+                
+        <div id="osContainer"><div id="osmaps_map" class="osmapsMap"></div></div>
+<script>
+              /*  temporary for expanded code  */
+    var longitude = 11, latitude = 45, zoom = 10, markerURL = 'http://localhost/wplocal.it/wp-content/plugins/osmaps/public/marker-green.png';
+            /*  --------    */
+            
+    var city = new ol.Feature({
+        geometry: new ol.geom.Point( ol.proj.fromLonLat( [longitude, latitude ] ))
+    });
+    
+    city.setStyle( new ol.style.Style({ 
+        image: new ol.style.Icon(({
+            src: markerURL, 
+            anchor: [0.5, 1]
+        })) 
+    }));
+    
+    var vectorSource = new ol.source.Vector( { features: [city] } );
+    
+    var vectorLayer = new ol.layer.Vector( {source: vectorSource} );       
+    
+    var map = new ol.Map({
+        
+        interactions: ol.interaction.defaults( {mouseWheelZoom:false} ),     /*  disable wheel   */
+         
+        layers: [ new ol.layer.Tile( {source: new ol.source.OSM()} ), vectorLayer ],
+        target: 'osmaps_map', 
+        view: new ol.View({ 
+            center: ol.proj.fromLonLat([ longitude , latitude ]), 
+            zoom: zoom 
+         })
+    });
+    
+</script>        
+    </body>
+</html>

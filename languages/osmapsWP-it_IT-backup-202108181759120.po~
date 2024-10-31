@@ -1,0 +1,362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OSMaps\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-18 17:36+0000\n"
+"PO-Revision-Date: 2021-08-18 17:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: Italiano\n"
+"Language: it_IT\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.2; wp-5.8"
+
+#: osmaps.php:41 icd/class.admin.php:584
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: icd/class.admin.php:36
+msgid ""
+"<span>- Longitude</span>. A positive (East) or negative (West) floating "
+"point number. Ex: 10.36581"
+msgstr ""
+"<span>- Longitudine</span>.  Numero in virgola mobile positivo (Est) o "
+"negativo (Ovest). Es: 10.36581"
+
+#: icd/class.admin.php:37
+msgid ""
+"<span>- Latitude</span>. A positive (Nord) or negative (South) floating "
+"point number. Ex: 45.3980"
+msgstr ""
+"<span>- Latitudine</span>. Numero in virgola mobile positivo (Nord) o "
+"negativo (Sud). Es: 45.3980"
+
+#: icd/class.admin.php:38
+msgid ""
+"<span>- Help</span>. <a href=\"https://wpd.edilweb."
+"eu/maps_findCoordinates/\" target=\"_blank\"> Help for coordinates </a>"
+msgstr ""
+"<span>- Aiuto</span>. <a href=\"https://wpd.edilweb."
+"eu/maps_findCoordinates/\" target=\"_blank\"> Aiuto ricerca coordinate </a>"
+
+#: icd/class.admin.php:39
+msgid "<span>- Zoom</span>. A positive integer number. Ex: 16"
+msgstr "<span>- Zoom</span>. Numero intero positivo. Es: 16"
+
+#: icd/class.admin.php:40
+msgid ""
+"<span>- PopUp</span>. Your message. In plain text or text/html format.<br>  "
+"&nbsp;Caution. Your html tags could take an existing style from the theme."
+msgstr ""
+"<span>- PopUp</span>. Il tuo messaggio. In solo testo oppure con html.<br>  "
+"&nbsp;Attenzione. Il tuo tag html potrebbe prendere un preesistente stile "
+"del tema."
+
+#: icd/class.admin.php:41
+msgid "<span>- Height</span>. Ex: 400px"
+msgstr "<span>- Altezza</span>. Ex: 400px"
+
+#: icd/class.admin.php:42
+msgid ""
+"<span>- Max-width</span>. Optional. An empty setting will make the image "
+"full width.  Ex: 360px to display an image with a width of 360px"
+msgstr ""
+"<span>- Larghezza massima</span>. Facoltativo. Lascia il campo vuoto per una "
+"larghezza massima.  Es: 360px visualizza una mappa larga   360px"
+
+#: icd/class.admin.php:43
+msgid ""
+"<span>- Wheel</span>. Disable the mouse wheel. Default disable. Good to see "
+"the map on mobiles."
+msgstr ""
+"<span>- Wheel</span>. Disabilita la ruota del mouse. Disabilitata per "
+"Default. Bene per vedere la mappa sui cellulari."
+
+#: icd/class.admin.php:44
+msgid ""
+"<span>- API</span>. Choose your API javascript for a single map. Leaflet are "
+"lighter."
+msgstr ""
+"<span>- API</span>. Scegli l'API javascript per questa mappa. Le Api Leaflet "
+"sono più leggere."
+
+#: icd/class.admin.php:45
+msgid ""
+"<span>- Source Tiles</span>. Choose your Source Map Tiles. Mapbox require a "
+"key. <a href=\"https://account.mapbox.com/access-tokens/\" target=\"_blank\">"
+" Link to get a key </a>"
+msgstr ""
+"<span>- Origine delle Immagini (Tessere)</span>. Scegli il tuo fornitore. "
+"Mapbox richiede una key. <a href=\"https://account.mapbox.com/access-"
+"tokens/\" target=\"_blank\"> Che ottieni qui </a>"
+
+#: icd/class.admin.php:46
+msgid ""
+"<span>- Window Popup. </span>Displays a button labeled: <strong>View "
+"Map</strong>. Clicking a full screen new window popup displays the required "
+"map. Width and height already set are ignored.<br>&nbsp;The button has a "
+"class <strong>\"OSMbutton\"</strong> with no css rules set.<br>&nbsp;The "
+"button is wrapped in a container div with class <strong>"
+"\"OSMdivButton\"</strong> without css rules set. You can use WP's css editor "
+"to have a custom button style.<br>&nbsp;There is no limit to the number of "
+"buttons on a web page."
+msgstr ""
+"<span>- Window Popup. </span>Visualizza un pulsante con scritto: <strong>"
+"Vedi Mappa</strong>. Facendo click sarà visualizzata la mappa in una nuova "
+"scheda del browser. Larghezza e altezza già impostate saranno ignorate.<br>"
+"&nbsp;Il pulsante ha la classe html  <strong>\"OSMbutton\"</strong> senza "
+"regole css impostate.<br>&nbsp;Il pulsante è avvolto in un div container con "
+"classe  <strong>\"OSMdivButton\"</strong> senza regole css impostate. Si può "
+"personalizzare l'aspetto del pulsante aggiungendo regole css con l'editor di "
+"WP.<br>&nbsp;Non c'è limite al numero di pulsanti che una pagina può "
+"contenere."
+
+#: icd/class.admin.php:48
+msgid "Longitude"
+msgstr "Longitudine"
+
+#: icd/class.admin.php:48
+msgid "Longitude float value"
+msgstr "Longitudine numero virgola mobile"
+
+#: icd/class.admin.php:49
+msgid "Latitude"
+msgstr "Latitudine"
+
+#: icd/class.admin.php:49
+msgid "Latitude float value"
+msgstr "Latitudine numero virgola mobile"
+
+#: icd/class.admin.php:50
+msgid "integer value"
+msgstr "numero intero"
+
+#: icd/class.admin.php:52
+msgid "Map type"
+msgstr "tipo Mappa"
+
+#: icd/class.admin.php:54
+msgid "Simple"
+msgstr "Semplice"
+
+#: icd/class.admin.php:55
+msgid "with Marker"
+msgstr "con Marker"
+
+#: icd/class.admin.php:56
+msgid "with PopUp"
+msgstr "con Popup"
+
+#: icd/class.admin.php:57
+msgid "with Marker and PopUp"
+msgstr "con Marker e Popup"
+
+#: icd/class.admin.php:59
+msgid "Your<br>popup text"
+msgstr "Testo<br />del popup"
+
+#: icd/class.admin.php:59
+msgid "HTML allowed"
+msgstr "HTML supportato"
+
+#: icd/class.admin.php:61
+msgid "Height"
+msgstr "Altezza"
+
+#: icd/class.admin.php:61
+msgid "Height. Ex: 330px"
+msgstr "Altezza. Es: 330px"
+
+#: icd/class.admin.php:62
+msgid "Max-width"
+msgstr "Larghezza massima"
+
+#: icd/class.admin.php:62
+msgid "Max-width. Ex: 400px"
+msgstr "Larghezza massima. Es: 400px"
+
+#: icd/class.admin.php:64
+msgid "Disable wheel"
+msgstr "Disabilita la ruota del mouse"
+
+#: icd/class.admin.php:64
+msgid "Disable wheel by default"
+msgstr "Disabilita ruota predefinito"
+
+#: icd/class.admin.php:66
+msgid "Type or paste your key"
+msgstr "Digita / Incolla la Key"
+
+#: icd/class.admin.php:67
+msgid "Warning. Missing key for Mapbox tiles."
+msgstr "Attenzione. Manca la Key per le tessere Mapbox"
+
+#: icd/class.admin.php:68
+msgid "Warning. Tiles Mapbox run with API Leaflet!"
+msgstr "Attenzione. Le Tessere Mapbox richiedono API Leaflet!"
+
+#: icd/class.admin.php:69
+msgid "error #5: unknown error in SELECT"
+msgstr "errore #5: errore sconosciuto in SELECT"
+
+#: icd/class.admin.php:70
+msgid "error #6: unknown error in SELECT"
+msgstr "errore #6: errore sconosciuto in SELECT"
+
+#: icd/class.admin.php:71
+msgid "No empty Map!"
+msgstr "Inserisci un nome mappa!"
+
+#: icd/class.admin.php:72
+msgid "Double map name Error!"
+msgstr "Nome già presente!"
+
+#: icd/class.admin.php:73
+msgid "Delete map -"
+msgstr "Cancella mappa - "
+
+#: icd/class.admin.php:73
+msgid "- Are you sure?"
+msgstr " - Sei sicuro?"
+
+#: icd/class.admin.php:74
+msgid "Reserved name."
+msgstr "Nome riservato."
+
+#: icd/class.admin.php:78
+msgid "All Maps"
+msgstr "Tutte le mappe"
+
+#: icd/class.admin.php:79
+msgid "Selected map"
+msgstr "Mappa selezionata"
+
+#: icd/class.admin.php:80
+msgid "Source Tiles Key"
+msgstr "Key per avere le Tessere."
+
+#: icd/class.admin.php:81
+msgid "Maps available"
+msgstr "Mappe disponibili"
+
+#: icd/class.admin.php:82
+msgid "Add New Map"
+msgstr "Aggiungi nuova mappa"
+
+#: icd/class.admin.php:83
+msgid "Name Map"
+msgstr "Nome della Mappa"
+
+#: icd/class.admin.php:84
+msgid "Your new map. Es: MyNewMap"
+msgstr "La tua nuova mappa. Es: MyNewMap"
+
+#: icd/class.admin.php:85
+msgid "Add new Map"
+msgstr "Aggiungi nuova mappa"
+
+#: icd/class.admin.php:86
+msgid "Map name"
+msgstr "Nome della Mappa"
+
+#: icd/class.admin.php:87
+msgid "Click Save Changes for a definitive registration."
+msgstr "Fai click su Salva Modifiche per una registrazione definitiva"
+
+#: icd/class.admin.php:88
+msgid "API javascript"
+msgstr "API javascript"
+
+#: icd/class.admin.php:89
+msgid "Source Map Tiles"
+msgstr "Origine delle immagini della mappa"
+
+#: icd/class.admin.php:90
+msgid "Source"
+msgstr "Origine"
+
+#: icd/class.admin.php:91
+msgid "Source Tiles and Key"
+msgstr "Origine Tessere e Key"
+
+#: icd/class.admin.php:92
+msgid "Add / Modify keys for your source tiles"
+msgstr "Aggiungi / Modifica Keys per le tue tessere."
+
+#: icd/class.admin.php:93
+msgid "do not require a key"
+msgstr "non richiede una key"
+
+#: icd/class.admin.php:94
+msgid "require a key."
+msgstr "richiede una key"
+
+#: icd/class.admin.php:95
+msgid "Link to get a key"
+msgstr "Link per ottenere una Key"
+
+#: icd/class.admin.php:96
+msgid "Mapbox creates satellite maps."
+msgstr "Le mappe di Mapbox sono satellitari."
+
+#: icd/class.admin.php:97
+msgid "Map on New Window"
+msgstr "Mappa in una nuova finestra"
+
+#: icd/class.admin.php:98
+msgid "New Window on / off"
+msgstr "Attiva / Disattiva mappa in una nuova finestra."
+
+#: icd/class.admin.php:99
+msgid "Turn on / off the map displayed in a new window"
+msgstr "Attiva/disattiva la mappa visualizzata in una nuova finestra"
+
+#: icd/class.admin.php:509
+msgid "OSMaps error #2: OSMaps_admin::Validate_form"
+msgstr "OSMaps errore #2: OSMaps_admin::Validate_form"
+
+#: icd/class.admin.php:525
+msgid "OSMaps error #3: Height format example: 350px"
+msgstr "OSMaps errore #3: Altezza esempio di formato: 350px"
+
+#: icd/class.admin.php:533
+msgid "OSMaps error #4: Max - Width format example: 500px"
+msgstr "OSMaps errore #4:  Larghezza massima,  formato esempio: 500px"
+
+#: icd/class.frontend.php:106
+msgid "API javascript unknown"
+msgstr "API javascript sconosciuta"
+
+#: icd/class.frontend.php:146 icd/class.frontend.php:183
+#: icd/class.frontend.php:214
+#, php-format
+msgid "OSMaps error #1: wrong select! %s does not exist."
+msgstr "OSMaps errore #1: selezione errata! %s  non esiste."
+
+#: icd/class.frontend.php:247
+msgid "VIEW MAP"
+msgstr "VEDI MAPPA"
+
+#. Name of the plugin
+msgid "OSMaps"
+msgstr "OSMaps"
+
+#. Description of the plugin
+msgid ""
+"It is a plugin which displays maps on your site. Source Tiles: OpenStreetMap."
+" API javascript: OpenLayers and Leaflet."
+msgstr ""
+"OSMaps è un plugin che visualizza mappe sul tuo sito. Sorgente delle tessere:"
+" OpenStreetMap. API javascript: OpenLayers e Leaflet"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://wpd.edilweb.eu"
+msgstr "https://wpd.edilweb.eu"
+
+#. Author of the plugin
+msgid "Alessandro Lin"
+msgstr "Alessandro Lin"
